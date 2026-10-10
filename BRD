@@ -1,0 +1,56 @@
+Business Requirement Document (BRD)
+Project Name: Food Delivery Application (Swiggy Model)
+Document Version: 1.0
+Date: October 10, 2026
+1. Executive Summary
+The purpose of this project is to build a comprehensive, multi-platform food ordering and delivery ecosystem similar to Swiggy. The platform will bridge the gap between customers, restaurant partners, and delivery personnel, delivering a seamless food ordering experience with real-time tracking, secure payments, and route optimization.
+2. Project Scope
+In-Scope
+ * Customer Interface: Web and mobile platforms (iOS & Android) for searching restaurants, browsing menus, placing orders, and tracking deliveries.
+ * Merchant/Restaurant Portal: Dashboard for managing menus, accepting/rejecting orders, and analyzing earnings.
+ * Delivery Fleet Module: Mobile application for driver dispatch, real-time route navigation, order updates, and payout history.
+ * Admin Control Center: Platform management tool for operational oversight, user management, order monitoring, dispute handling, and analytics.
+Out-of-Scope (Phase 1)
+ * Quick-commerce grocery delivery (e.g., Swiggy Instamart).
+ * Genie/Courier pickup-and-drop service.
+3. Stakeholders & User Roles
+| Role | Key Description & Objectives |
+|---|---|
+| Customer | Searches for restaurants/dishes, places orders, makes payments, tracks orders, and provides feedback. |
+| Restaurant Partner | Updates menu inventory, accepts incoming orders, prepares food, and marks orders ready for pickup. |
+| Delivery Partner | Accepts delivery requests, picks up food from restaurants, and delivers to customer locations. |
+| System Administrator | Manages users, onboarding, commissions, operational areas, platform fees, and platform-wide metrics. |
+4. Key Functional Requirements
+4.1 Customer Mobile & Web App
+ * User Onboarding & Authentication: Signup/login via phone number (OTP), email, or social accounts.
+ * Location & Search: Automatic GPS detection, manual address entry, filter by cuisine, rating, price, and dietary preference (Veg/Non-Veg).
+ * Restaurant & Menu View: High-resolution dish photos, item customization (addons/variants), and real-time item availability.
+ * Cart & Checkout: Promo code application, delivery tip selection, order summary breakdown (GST, packaging, delivery fee).
+ * Payment Gateway Integration: Credit/Debit Cards, UPI, Mobile Wallets, Net Banking, and Cash on Delivery (COD).
+ * Live Order Tracking: GPS tracking of the delivery partner on an interactive map from pickup to drop-off.
+ * Ratings & Reviews: Dual rating system for food quality and delivery experience.
+4.2 Restaurant Management Module
+ * Order Management Dashboard: Real-time visual and audio alerts for new orders with options to accept/reject and set estimated prep times.
+ * Menu Management: Enable/disable items dynamically, set pricing, update categories, and configure add-on packages.
+ * Financial Performance: Daily earnings summaries, commission deductions, and payout history.
+4.3 Delivery Partner App
+ * Duty Toggle: Go online/offline to receive order allocations.
+ * Order Dispatch System: Broadcast delivery alerts with pickup and drop distance/estimated earnings before acceptance.
+ * In-App Navigation: Turn-by-turn map navigation integrated with Google Maps or MapmyIndia.
+ * Order Status Updates: One-touch status changes: Arrived at Restaurant, Order Picked Up, Arrived at Location, Order Delivered.
+4.4 Admin Console
+ * User Management: Onboard and manage customers, restaurants, and delivery drivers.
+ * Commission & Pricing Engine: Configure variable commission rates per restaurant, surge pricing, and distance fees.
+ * Dispute & Refund Management: Customer support ticketing integration to process refunds and resolve disputes.
+ * Analytics & Reporting: Revenue charts, peak ordering hours, heatmaps of active demand, and delivery SLA compliance reports.
+5. Non-Functional Requirements
+ * Performance: Maximum page load time under 2 seconds; search results delivered in less than 500ms.
+ * Scalability: System architecture capable of handling up to 100,000 concurrent active users during peak hours.
+ * Availability: 99.9% platform uptime with redundant server failovers.
+ * Security: End-to-end SSL/TLS encryption, PCI-DSS compliance for payments, and strict adherence to data protection regulations (e.g., GDPR / India DPDP Act).
+ * Localization & Accessibility: Multi-language support and high-contrast accessibility modes.
+6. Success Metrics & KPIs
+ * Order Completion Rate: ≥ 95% of initiated orders successfully delivered.
+ * Average Delivery SLA: Under 35 minutes per order within standard operating zones.
+ * Customer Retention: High 30-day repeat order rate.
+ * App Store Ratings: Target score of 4.5+ stars across iOS and Android stores.
